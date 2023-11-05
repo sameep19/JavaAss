@@ -1,44 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<title>Welcome to E Corp.</title>
-	<link href="styles.css" type="text/css" rel="stylesheet">
-</head>
-
-<body>
-	<section id="container">
-		<header></header>
-
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="solutions.html">Solutions</a></li>
-				<li><a href="support.html">Support</a></li>
-				<li><a href="contactus.html">Contact Us</a></li>
-			</ul>
-		</nav>
-
-		<section id="content">
-			<h2>iPhone</h2>
-
-			<div id="content-item-list">
-				<!-- sample of what your toString should output
-					<div id="content-item-0">
-						<h4>name here</h4>
-						<p>description here</p>
-						<div>category genre here</div>
-					</div>
-				-->
-			</div>
-		</section>
-
-		<footer></footer>
-	</section>
-
-	<script src="jquery.js"></script>
-	<script src="script.js"></script>
-</body>
-
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Lionel Messi</title>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <header>
+         <h1>Lionel Messi</h1>
+      </header>
+      <ul class="accordion">
+        <!-- Information taken from google and wikipedia -->
+         <li>
+            <button class="accordion-control">Achievements</button>
+            <div class="accordion-panel">
+               <p>As a dual Argentine-Spanish national, Messi was eligible to play for the national team of both countries.Selectors for 
+                  Spain's Under-17 squad began pursuing him in 2003 after Barcelona's director of football, Carles Rexach, alerted the Royal 
+                  Spanish Football Federation to their young player. Messi declined the offer, having aspired to represent La Albiceleste since 
+                  childhood. To further prevent Spain from taking him, the Argentine Football Association organised two under-20 friendlies in 
+                  June 2004, against Paraguay and Uruguay, with the purpose of finalising his status as an Argentina player in FIFA. Five days 
+                  after his 17th birthday, on 29 June, he made his debut for his country against Paraguay, scoring once and providing two 
+                  assists in their 8/0 victory. 
+               </p>
+            </div>
+         </li>
+         <li>
+            <button class="accordion-control">ballon d'or</button>
+            <div class="accordion-panel">
+               <p>Lionel Messi has won the award a record eight times, followed by Cristiano Ronaldo with five. Messi is the only player in 
+                  history to win the award with three different teams and also the only one to win it while playing outside Europe.Three players
+                  have won the award three times each: Johan Cruyff, Michel Platini, and Marco van Basten. With seven awards each, Dutch, 
+                  German, Portuguese and French players have won the second most Ballons d'Or, underneath Argentina in first with eight.
+               </p>
+            </div>
+         </li>
+         <li>
+            <button class="accordion-control">Early Life</button>
+            <div class="accordion-panel">
+               <p>Messi was born on 24 June 1987 in Rosario, Santa Fe, the third of four children of Jorge Messi, a steel factory manager, 
+                  and his wife Celia Cuccittini, who worked in a magnet manufacturing workshop. On his father's side, he is of Italian and 
+                  Spanish descent, the great-grandson of immigrants from the north-central Adriatic Marche region of Italy, and on his mother's 
+                  side, he has primarily Italian ancestry. Growing up in a tight-knit, football-loving family, "Leo" developed a passion for 
+                  the sport from an early age, playing constantly with his older brothers, Rodrigo and Matías, and his cousins, Maximiliano and 
+                  Emanuel Biancucchi, both of whom became professional footballers
+               </p>
+            </div>
+         </li>
+      </ul>
+      <div class="tabs">
+         <ul class="tab-list">
+            <li class="active">
+               <a class="tab-control" href="#tab-1">
+                  <h3>Lionel Messi</h3>
+               </a>
+            </li>
+            <li>
+               <a class="tab-control" href="#tab-2">
+                  <h3>Images</h3>
+               </a>
+            </li>
+         </ul>
+         <!-- Pictures taken from google and wikipedia -->
+         <div class="tab-panel active" id="tab-1">
+            <p>
+               <img src="/IMG/Lionel Messi.jpg" alt="Lionel Messi">
+            </p>
+         </div>
+         <div class="tab-panel" id="tab-3">
+            <p>
+               <img src="/IMG/MESSI.jpg" alt="Messi Playing In Barcelona">
+               <img src="/IMG/Lionel_Messi_WC2022.jpg" alt="Messi WC pic">
+            </p>
+         </div>
+         <div class="tab-panel" id="tab-4">
+            <p>What I do is play soccer, which is what I like.
+               <strong>Lionel M'10</strong>
+            </p>
+         </div>
+         <div class="tab-panel" id="tab-5">
+            <p><strong>ballon d'or winning years</strong></p>
+            <ul>
+               <li>2009</li>
+               <li>2010</li>
+               <li>2011</li>
+               <li>2012</li>
+               <li>2015</li>
+               <li>2019</li>
+               <li>2021</li>
+               <li>2023</li>
+            </ul>
+         </div>
+      </div>
+      <script src="js/script.js"></script>
+   </body>
 </html>

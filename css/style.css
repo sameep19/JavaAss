@@ -1,0 +1,93 @@
+
+body {
+    font-family: 'Times New Roman';
+    color: silver;
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: yellow;
+    color:blue;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+
+.tab-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: brown;
+    border-bottom: 2px solid olive;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+}
+
+.tab-list li {
+    flex: 1;
+}
+
+.tab-list li a {
+    color: gainsboro;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, border-bottom 0.3s, color 0.3s;
+}
+
+.tab-list li.active a {
+    color: gray;
+    background-color: gainsboro;
+    border-bottom: 2px solid gray;
+}
+
+.tab-list li a:hover {
+    background-color: white;
+    border-bottom: 3px solid wheat;
+    color: gray;
+}
+
+.tab-panel {
+    background-color: whitesmoke;
+    color: gray;
+    min-height: 150px;
+    overflow: auto;
+    padding: 20px;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+
+.accordion li {
+    list-style: none;
+    padding: 0;
+}
+
+.accordion-control {
+    background-color: black;
+    color: gainsboro;
+    display: block;
+    width: 100%;
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    margin: 0;
+    border-top: 1px solid wheat;
+}
+
+.accordion-panel {
+    display: none;
+}
+
+.accordion-panel p {
+    margin: 20px;
+}
