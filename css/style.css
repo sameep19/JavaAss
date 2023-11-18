@@ -1,0 +1,41 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.search-container {
+    margin: 15px;
+}
+
+#characters-table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 30px;
+}
+
+#characters-table th, #characters-table td {
+    border: 2px solid yellow; 
+    padding: 10px;
+    text-align: left;
+}
+
+#characters-table th {
+    background-color:blue; 
+}
+
+#characters-table .highlighted {
+    background-color: rgb(247, 3, 235); 
+    color: white;
+}
+
+.filter-buttons {
+    margin: 20px;
+}
+
+.filter-buttons button {
+    margin-right: 10px;
+    padding: 8px;
+    cursor: pointer;
+    background-color:orange; 
+    color: white; 
+}
+
